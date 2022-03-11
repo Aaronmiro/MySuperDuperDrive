@@ -158,8 +158,8 @@ class CloudStorageApplicationTests {
     @Test
     public void testBadUrl() {
         // Create a test account
-        doMockSignUp("URL", "Test", "UT", "123");
-        doLogIn("UT", "123");
+        doMockSignUp("URL", "Bad", "UB", "123");
+        doLogIn("UB", "123");
 
         // Try to access a random made-up URL.
         driver.get("http://localhost:" + this.port + "/some-random-page");
@@ -218,8 +218,8 @@ class CloudStorageApplicationTests {
         driver.get("http://localhost:" + this.port + "/some-random-page");
         Assertions.assertEquals("Login", driver.getTitle());
 
-        doMockSignUp("URL", "Test", "UT", "123");
-        doLogIn("UT", "123");
+        doMockSignUp("Unauthorized", "Access", "UA", "123");
+        doLogIn("UA", "123");
         Assertions.assertEquals("Home", driver.getTitle());
         logout();
         driver.get("http://localhost:" + this.port + "/home");
@@ -245,8 +245,8 @@ class CloudStorageApplicationTests {
 
     @Test
     public void notesTest() {
-        doMockSignUp("URL", "Test", "UT", "123");
-        doLogIn("UT", "123");
+        doMockSignUp("Notes", "Test", "NT", "123");
+        doLogIn("NT", "123");
         Assertions.assertEquals("Home", driver.getTitle());
 
         String title = "title1";
@@ -352,8 +352,8 @@ class CloudStorageApplicationTests {
 
     @Test
     public void credentialsTest() {
-        doMockSignUp("URL", "Test", "UT", "123");
-        doLogIn("UT", "123");
+        doMockSignUp("Credentials", "Test", "CT", "123");
+        doLogIn("CT", "123");
         Assertions.assertEquals("Home", driver.getTitle());
 
         String url1 = "www.aaronmiro.com";
