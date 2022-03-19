@@ -37,7 +37,7 @@ public class FileController {
         if(fileService.ifExist(filename)){
             String changeErrorMsg = "Cannot upload two files with the same name";
             model.addAttribute("changeErrorMsg",changeErrorMsg);
-            return "/result";
+            return "result";
         }
         User user = userService.getUser(authentication.getName());
         File file = new File();
@@ -51,7 +51,7 @@ public class FileController {
         if (result > 0) {
             model.addAttribute("changeSuccess", true);
         } else model.addAttribute("changeSuccess", false);
-        return "/result";
+        return "result";
     }
 
     @RequestMapping("/delete")
@@ -59,7 +59,7 @@ public class FileController {
         if (fileService.deleteFileByFileId(fileId)) {
             model.addAttribute("changeSuccess", true);
         } else model.addAttribute("changeSuccess", false);
-        return "/result";
+        return "result";
     }
 
     @GetMapping

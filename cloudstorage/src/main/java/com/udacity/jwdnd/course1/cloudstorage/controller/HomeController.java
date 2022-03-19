@@ -50,7 +50,7 @@ public class HomeController {
         model.addAttribute("notes", notes);
         model.addAttribute("credentials", credentials);
         model.addAttribute("fileForms", fileForms);
-        return "/home";
+        return "home";
     }
 
 

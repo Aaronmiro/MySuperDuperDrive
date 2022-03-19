@@ -37,7 +37,7 @@ public class CredentialController {
         if (result > 0) {
             model.addAttribute("changeSuccess", true);
         } else model.addAttribute("changeSuccess", false);
-        return "/result";
+        return "result";
     }
 
     @GetMapping
@@ -45,6 +45,6 @@ public class CredentialController {
         if (credentialService.deleteCredentialById(credentialId)) {
             model.addAttribute("changeSuccess", true);
         } else model.addAttribute("changeSuccess", false);
-        return "/result";
+        return "result";
     }
 }
