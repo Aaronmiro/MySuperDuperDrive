@@ -1,5 +1,9 @@
 # MySuperDuperDrive
 
+### [Quick start](http://104.131.45.178:8078)
+- **username**: aaronmiro
+- **password**: 123456
+
 ### This project includes three user-facing features:
 
 1. **Simple File Storage**: Upload/download/remove files
