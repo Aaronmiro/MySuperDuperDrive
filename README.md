@@ -25,7 +25,7 @@ Edited these templates and inserted **Thymeleaf** attributes to supply the back-
 2. Sign Up page
 3. Home page: 
 
-\* The home page is the center of the application and hosts the three required pieces of functionality(File, Notes, Credentials). The home page has a logout button that allows the user to log out of the application and keep their data private.
+The home page is the center of the application and hosts the three required pieces of functionality(File, Notes, Credentials). The home page has a logout button that allows the user to log out of the application and keep their data private.
 
 ## 3. Testing
 
