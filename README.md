@@ -1,6 +1,6 @@
 # MySuperDuperDrive
 
-### [Quick start](http://104.131.45.178:8078)
+### [Quick Start](http://104.131.45.178:8078)
 - **username**: aaronmiro
 - **password**: 123456
 
